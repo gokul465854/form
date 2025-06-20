@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(115deg, #000428, #004e92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  animation: popIn 0.8s ease-in-out;
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #00f7ff;
+  text-shadow: 0 0 8px #00f7ff88;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px 45px 14px 18px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 8px #00ffe5;
+}
+
+.input-box i {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00f7ffcc;
+  font-size: 20px;
+}
+
+.forgot-link {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-link a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-link a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #00f7ff;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: #00f7ff;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 12px #00f7ff88;
+}
+
+.btn:hover {
+  background: #00f7ffcc;
+  transform: scale(1.02);
+}
+
+p {
+  text-align: center;
+  margin: 25px 0 15px;
+  font-size: 15px;
+  color: #bbb;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-icons a {
+  color: #00f7ff;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #00f7ff;
+  color: #fff;
+}
